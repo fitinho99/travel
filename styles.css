@@ -585,10 +585,20 @@ body {
     width: 100%;
   }
 
-  .newsletter-form input,
-  .newsletter-form button {
-    width: 100%;
-  }
+.logo-text {
+  text-align: center;
+  width: 100%;
+}
+
+.newsletter-form input {
+  font-size: 0.9rem;
+  padding: 8px 10px;
+}
+
+.newsletter-form button {
+  font-size: 0.9rem;
+  padding: 8px 10px;
+}
 
   .modal-content {
     width: 90%;
