@@ -517,12 +517,13 @@ body {
 }
 
 @media (max-width: 768px) {
-  .topbar-content {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
+.topbar-content {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
   .redes-sociales {
     justify-content: center;
     margin: 10px 0;
@@ -588,17 +589,16 @@ body {
 .logo-text {
   text-align: center;
   width: 100%;
-  display: block;
 }
 
-  .newsletter-form input,
-  .newsletter-form button {
-    font-size: 0.85rem;
-    padding: 8px 12px;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-
+.newsletter-form input,
+.newsletter-form button {
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  width: 80%;
+  max-width: 300px;
+  margin: 0 auto;
+}
   .modal-content {
     width: 90%;
     max-height: 80vh;
