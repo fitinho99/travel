@@ -53,9 +53,13 @@ body {
 
 
 .nav-logo {
-  height: 180px;
-  object-fit: contain;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
+
 
 .nav-links {
   list-style: none;
@@ -146,10 +150,9 @@ body {
 
 .hero-row {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap; /* opcional, para que se adapte en pantallas chicas */
+  text-align: center;
 }
 
 .hero-text h1 {
@@ -511,8 +514,7 @@ body {
 .opcion-ciudad:hover {
   background-color: #f1f1f1;
 }
-
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .topbar-content {
     flex-direction: column;
     gap: 10px;
@@ -524,28 +526,31 @@ body {
     margin: 10px 0;
   }
 
-  .hero-row {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
+   .hero-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
   }
 
   .nav-logo {
     height: 120px;
   }
+.search-bar-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
 
-  .search-bar-horizontal {
-    flex-direction: column;
-    gap: 10px;
-    align-items: stretch;
-  }
-
-  .search-bar-horizontal input,
-  .search-bar-horizontal select,
-  .search-bar-horizontal button {
-    width: 100%;
-    max-width: 100%;
-  }
+.search-bar-horizontal input,
+.search-bar-horizontal select,
+.search-bar-horizontal button {
+  flex: 1 1 150px;
+  max-width: 100%;
+}
 
   .tipo-viaje-tabs {
     flex-direction: column;
@@ -593,4 +598,3 @@ body {
   }
 }
 
-}
