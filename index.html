@@ -278,7 +278,12 @@ function enviarWhatsapp() {
   if (ninos > 0) mensaje += ` y ${ninos} niño${ninos > 1 ? 's' : ''}`;
   mensaje += `. Tipo de viaje: ${tipoTexto}.`;
 
-  const url = `https://wa.me/5491166540694?text=${encodeURIComponent(mensaje)}`;
+  const isMobile = /iPhone|Android/i.test(navigator.userAgent);
+  const baseURL = isMobile
+    ? "https://wa.me/5491166540694?text="
+    : "https://web.whatsapp.com/send?phone=5491166540694&text=";
+
+  const url = baseURL + encodeURIComponent(mensaje);
   window.open(url, "_blank");
 }
 </script>
