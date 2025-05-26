@@ -513,18 +513,31 @@ body {
 }
 
 @media (max-width: 768px) {
-  .hero-row {
+  .topbar-content {
     flex-direction: column;
+    gap: 10px;
     text-align: center;
   }
 
+  .redes-sociales {
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .hero-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
   .nav-logo {
-    height: 100px;
+    height: 120px;
   }
 
   .search-bar-horizontal {
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 10px;
+    align-items: stretch;
   }
 
   .search-bar-horizontal input,
@@ -534,14 +547,18 @@ body {
     max-width: 100%;
   }
 
-  .topbar-content {
+  .tipo-viaje-tabs {
     flex-direction: column;
-    text-align: center;
     gap: 10px;
   }
 
-  .redes-sociales {
-    justify-content: center;
+  .promo-box {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .promos {
+    flex-direction: column;
   }
 
   .card-row {
@@ -549,13 +566,14 @@ body {
     align-items: center;
   }
 
-  .promo-box {
-    font-size: 0.9rem;
+  .whatsapp-help a {
+    flex-direction: column;
+    text-align: center;
   }
 
   .newsletter {
     flex-direction: column;
-    text-align: center;
+    gap: 20px;
   }
 
   .newsletter-form {
@@ -573,4 +591,6 @@ body {
     max-height: 80vh;
     overflow-y: auto;
   }
+}
+
 }
