@@ -536,7 +536,9 @@ body {
   }
 
   .nav-logo {
-    height: 120px;
+    float: none !important;
+    display: block !important;
+    margin: 0 auto !important;
   }
 
   .search-bar-horizontal {
