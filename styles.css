@@ -511,3 +511,66 @@ body {
 .opcion-ciudad:hover {
   background-color: #f1f1f1;
 }
+
+@media (max-width: 768px) {
+  .hero-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-logo {
+    height: 100px;
+  }
+
+  .search-bar-horizontal {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .search-bar-horizontal input,
+  .search-bar-horizontal select,
+  .search-bar-horizontal button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .topbar-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .redes-sociales {
+    justify-content: center;
+  }
+
+  .card-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-box {
+    font-size: 0.9rem;
+  }
+
+  .newsletter {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}
